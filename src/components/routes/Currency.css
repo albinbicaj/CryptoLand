@@ -1,0 +1,70 @@
+.currency-container {
+  background-color: #1e1f2b;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.currency-name {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+.currency-symbol {
+  font-size: 24px;
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+.currency-price-btc,
+.currency-price-usd {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.currency-price-btc:before,
+.currency-price-usd:before {
+  content: attr(data-label);
+  color: #888;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.currency-volume {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.currency-volume:before {
+  content: "24 Hour Volume: ";
+  color: #888;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.currency-back-button {
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.currency-back-button:hover {
+  background-color: #fff;
+  color: #1e1f2b;
+}

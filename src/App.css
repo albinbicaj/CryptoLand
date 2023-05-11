@@ -1,38 +1,52 @@
-.App {
+/* Define styles for the header */
+.header {
+  background-color: #292f3d;
+  color: white;
+  font-size: 32px;
+  padding: 16px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Define styles for the crypto list container */
+.cryptoList {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 32px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Define styles for each crypto item in the list */
+.cryptoItem {
+  background-color: #ffc107;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  margin: 16px;
+  max-width: 300px;
+  padding: 16px;
+  transition: all 0.2s ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cryptoItem:hover {
+  transform: translateY(-4px);
+}
+
+/* Define styles for the crypto symbol */
+.cryptoSymbol {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Define styles for the crypto price */
+.cryptoPrice {
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Define styles for the loading indicator */
+.loadingIndicator {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
 }
